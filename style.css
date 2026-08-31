@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fcecef;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* Área principal */
+.container {
+    width: 100%;
+    max-width: 390px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Cartão */
+.cadastro-card {
+    width: 100%;
+    min-height: 690px;
+    background: #fffdfd;
+    border-radius: 10px;
+    padding: 28px 20px;
+    box-shadow: 0 2px 15px rgba(180, 100, 120, 0.08);
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.flor {
+    color: #d994a8;
+    font-size: 48px;
+    height: 48px;
+    line-height: 45px;
+    transform: rotate(-10deg);
+    margin-bottom: 3px;
+}
+
+.logo h1 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: normal;
+    color: #c95f7e;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    display: block;
+    margin-top: 5px;
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #222;
+}
+
+/* =========================
+   TÍTULO
+========================= */
+
+.titulo {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.titulo h2 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.titulo p {
+    font-size: 10px;
+    color: #888;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.input-box {
+    width: 100%;
+    height: 32px;
+    border: 1px solid #eadfe2;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 0 9px;
+    background: #fff;
+    transition: 0.2s;
+}
+
+.input-box:focus-within {
+    border-color: #ed6d91;
+    box-shadow: 0 0 0 2px rgba(237, 109, 145, 0.08);
+}
+
+.icon {
+    width: 20px;
+    color: #777;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding-left: 7px;
+    font-size: 10px;
+    color: #333;
+}
+
+.input-box input::placeholder {
+    color: #8d8d8d;
+}
+
+/* =========================
+   MENSAGEM
+========================= */
+
+#mensagem {
+    font-size: 10px;
+    color: #df4169;
+    min-height: 0;
+    text-align: center;
+}
+
+/* =========================
+   BOTÃO
+========================= */
+
+.btn-cadastrar {
+    width: 100%;
+    height: 31px;
+    border: none;
+    border-radius: 7px;
+    background: #ec6288;
+    color: white;
+    font-size: 11px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-cadastrar:hover {
+    background: #dc5078;
+}
+
+.btn-cadastrar:active {
+    transform: scale(0.98);
+}
+
+/* =========================
+   DIVISOR
+========================= */
+
+.ou {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.ou span {
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.ou p {
+    font-size: 9px;
+    color: #777;
+    white-space: nowrap;
+}
+
+/* =========================
+   REDES SOCIAIS
+========================= */
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #eee;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    transition: 0.2s;
+}
+
+.social:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.google {
+    color: #4285f4;
+}
+
+.facebook {
+    color: #4267B2;
+    font-size: 22px;
+}
+
+.apple {
+    color: #111;
+    font-size: 13px;
+}
+
+/* =========================
+   LOGIN
+========================= */
+
+.login {
+    text-align: center;
+    margin-top: 27px;
+    font-size: 9px;
+    color: #777;
+}
+
+.login a {
+    color: #c95f7e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 430px) {
+
+    body {
+        align-items: stretch;
+    }
+
+    .container {
+        padding: 8px;
+    }
+
+    .cadastro-card {
+        min-height: calc(100vh - 16px);
+        padding: 25px 18px;
+    }
+}
