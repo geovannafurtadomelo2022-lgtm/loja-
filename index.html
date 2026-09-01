@@ -1,121 +1,185 @@
 <!DOCTYPE html>
+<!-- Informa ao navegador que o documento usa HTML5 -->
+
 <html lang="pt-BR">
+<!-- Define o inicio do documento e informa que o idioma e portugues do Brasil -->
+
 <head>
+    <!-- Contem configuracoes e informacoes da pagina -->
+
     <meta charset="UTF-8">
+    <!-- Permite utilizar acentos e caracteres especiais -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz a pagina se adaptar corretamente a celulares e outros tamanhos de tela -->
 
     <title>La Femme Boutique - Criar conta</title>
+    <!-- Define o titulo que aparece na aba do navegador -->
 
     <link rel="stylesheet" href="style.css">
+    <!-- Importa o arquivo CSS responsavel pela aparencia da pagina -->
 </head>
 
 <body>
+    <!-- Contem todo o conteudo visivel da pagina -->
 
     <main class="container">
+        <!-- Area principal que centraliza o cartao de cadastro -->
 
         <div class="cadastro-card">
+            <!-- Cartao branco onde ficam todas as informacoes do cadastro -->
 
             <!-- Logo -->
             <div class="logo">
+                <!-- Agrupa os elementos que formam a logo -->
+
                 <div class="flor">❀</div>
+                <!-- Exibe o simbolo decorativo da flor -->
+
                 <h1>La Femme</h1>
+                <!-- Nome principal da loja -->
+
                 <span>B O U T I Q U E</span>
+                <!-- Texto menor usado como complemento da logo -->
             </div>
 
-            <!-- Título -->
+            <!-- Titulo -->
             <section class="titulo">
+                <!-- Area que apresenta o titulo e a descricao do formulario -->
+
                 <h2>Criar conta</h2>
+                <!-- Titulo da pagina de cadastro -->
+
                 <p>Preencha seus dados para se cadastrar</p>
+                <!-- Pequena explicacao para o usuario -->
             </section>
 
-            <!-- Formulário -->
+            <!-- Formulario -->
             <form id="formCadastro">
+                <!-- Formulario que sera identificado pelo JavaScript -->
 
                 <!-- Nome -->
                 <div class="input-box">
+                    <!-- Caixa que envolve o icone e o campo de nome -->
+
                     <span class="icon">♙</span>
+                    <!-- icone exibido ao lado do campo -->
+
                     <input
                         type="text"
                         id="nome"
                         placeholder="Nome completo"
                     >
+                    <!-- Campo utilizado para digitar o nome -->
                 </div>
 
                 <!-- E-mail -->
                 <div class="input-box">
+                    <!-- Mantem o mesmo padrao visual dos outros campos -->
+
                     <span class="icon">✉</span>
+                    <!-- icone de e-mail -->
+
                     <input
                         type="email"
                         id="email"
                         placeholder="E-mail"
                     >
+                    <!-- Campo destinado ao endereco de e-mail -->
                 </div>
 
                 <!-- Senha -->
                 <div class="input-box">
+                    <!-- Caixa do campo de senha -->
+
                     <span class="icon">♙</span>
+                    <!-- icone exibido ao lado da senha -->
+
                     <input
                         type="password"
                         id="senha"
                         placeholder="Senha"
                     >
+                    <!-- Campo que esconde os caracteres digitados -->
                 </div>
 
                 <!-- Telefone -->
                 <div class="input-box">
+                    <!-- Caixa do campo de telefone -->
+
                     <span class="icon">⌕</span>
+                    <!-- icone decorativo do campo -->
+
                     <input
                         type="tel"
                         id="telefone"
                         placeholder="Telefone (opcional)"
                     >
+                    <!-- Campo para telefone, que nao e obrigatorio -->
                 </div>
 
                 <!-- Mensagem de erro -->
                 <div id="mensagem"></div>
+                <!-- Local onde o JavaScript mostrara mensagens de erro ou sucesso -->
 
-                <!-- Botão -->
+                <!-- Botao -->
                 <button type="submit" class="btn-cadastrar">
                     Cadastrar
                 </button>
-
+                <!-- Botao responsavel por enviar o formulario -->
             </form>
 
             <!-- Divisor -->
             <div class="ou">
+                <!-- Secao que separa o cadastro tradicional das redes sociais -->
+
                 <span></span>
+                <!-- Linha decorativa -->
+
                 <p>ou cadastre-se com</p>
+                <!-- Texto apresentado no centro do divisor -->
+
                 <span></span>
+                <!-- Segunda linha decorativa -->
             </div>
 
             <!-- Redes sociais -->
             <div class="social-login">
+                <!-- Agrupa os botoes de cadastro pelas redes sociais -->
 
                 <button class="social google">
                     <b>G</b>
                 </button>
+                <!-- Botao visual do Google -->
 
                 <button class="social facebook">
                     <b>f</b>
                 </button>
+                <!-- Botao visual do Facebook -->
 
                 <button class="social apple">
-                    <b></b>
+                    <b>●</b>
                 </button>
-
+                <!-- Botao visual da Apple -->
             </div>
 
             <!-- Login -->
             <div class="login">
+                <!-- Area para usuarios que ja possuem uma conta -->
+
                 Já tem uma conta?
+                <!-- Pergunta apresentada ao usuario -->
+
                 <a href="#">Entrar</a>
+                <!-- Link para a tela de login -->
             </div>
 
         </div>
-
     </main>
 
     <script src="script.js"></script>
+    <!-- Importa o arquivo JavaScript que controla a validacao do formulario -->
 
 </body>
 </html>
+<!-- Finaliza o documento HTML -->

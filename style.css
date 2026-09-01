@@ -1,279 +1,370 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
+    /* Define a aparencia e o posicionamento geral da pagina */
     font-family: Arial, Helvetica, sans-serif;
+    /* Define a fonte principal */
     background: #fcecef;
+    /* Define o fundo rosa claro */
     min-height: 100vh;
+    /* Faz o body ocupar pelo menos toda a altura da tela */
     display: flex;
+    /* Permite utilizar Flexbox */
     justify-content: center;
+    /* Centraliza o conteudo horizontalmente */
     align-items: center;
+    /* Centraliza o conteudo verticalmente */
     color: #333;
+    /* Define a cor padrao dos textos */
 }
 
-/* Área principal */
+/* Area principal */
 .container {
+    /* Controla o espaco onde o cartao sera colocado */
     width: 100%;
+    /* Ocupa toda a largura disponivel */
     max-width: 390px;
+    /* Limita a largura maxima */
     min-height: 100vh;
+    /* Ocupa pelo menos a altura da tela */
     display: flex;
+    /* Ativa Flexbox */
     justify-content: center;
+    /* Centraliza horizontalmente */
     align-items: center;
+    /* Centraliza verticalmente */
     padding: 15px;
+    /* Cria espaco entre o cartao e as bordas */
 }
 
-/* Cartão */
+/* Cartao */
 .cadastro-card {
+    /* Estiliza o cartao de cadastro */
     width: 100%;
+    /* Ocupa toda a largura disponivel dentro do container */
     min-height: 690px;
+    /* Define uma altura minima */
     background: #fffdfd;
+    /* Define o fundo quase branco */
     border-radius: 10px;
+    /* Arredonda os cantos */
     padding: 28px 20px;
+    /* Cria espaco interno */
     box-shadow: 0 2px 15px rgba(180, 100, 120, 0.08);
+    /* Adiciona uma sombra suave */
 }
 
-/* =========================
-   LOGO
-========================= */
-
+/* LOGO */
 .logo {
+    /* Organiza a area da logo */
     text-align: center;
+    /* Centraliza os elementos */
     margin-bottom: 32px;
+    /* Cria espaco abaixo da logo */
 }
 
 .flor {
+    /* Estiliza o simbolo da flor */
     color: #d994a8;
+    /* Define a cor rosa */
     font-size: 48px;
+    /* Define o tamanho */
     height: 48px;
+    /* Define a altura */
     line-height: 45px;
+    /* Controla a altura da linha */
     transform: rotate(-10deg);
+    /* Inclina levemente a flor */
     margin-bottom: 3px;
+    /* Cria pequeno espaco abaixo */
 }
 
 .logo h1 {
+    /* Estiliza o nome La Femme */
     font-family: Georgia, serif;
+    /* Utiliza uma fonte serifada */
     font-size: 28px;
+    /* Define o tamanho do nome */
     font-weight: normal;
+    /* Remove o negrito padrao */
     color: #c95f7e;
+    /* Define a cor rosa escura */
     letter-spacing: -1px;
+    /* Aproxima um pouco as letras */
 }
 
 .logo span {
+    /* Estiliza a palavra BOUTIQUE */
     display: block;
+    /* Faz o elemento ocupar uma linha propria */
     margin-top: 5px;
+    /* Cria espaco acima */
     font-size: 8px;
+    /* Define tamanho pequeno */
     font-weight: bold;
+    /* Deixa o texto em negrito */
     letter-spacing: 5px;
+    /* Aumenta o espacamento entre letras */
     color: #222;
+    /* Define a cor escura */
 }
 
-/* =========================
-   TÍTULO
-========================= */
-
+/* TITULO */
 .titulo {
+    /* Organiza o titulo do formulario */
     text-align: center;
+    /* Centraliza o conteudo */
     margin-bottom: 16px;
+    /* Cria espaco abaixo */
 }
 
 .titulo h2 {
+    /* Estiliza "Criar conta" */
     font-size: 17px;
+    /* Define o tamanho */
     font-weight: 600;
+    /* Define um peso intermediario */
     margin-bottom: 5px;
+    /* Cria espaco abaixo do titulo */
 }
 
 .titulo p {
+    /* Estiliza a descricao */
     font-size: 10px;
+    /* Define o tamanho pequeno */
     color: #888;
+    /* Define a cor cinza */
 }
 
-/* =========================
-   INPUTS
-========================= */
-
+/* INPUTS */
 .input-box {
+    /* Estiliza cada caixa de entrada */
     width: 100%;
+    /* Ocupa toda a largura */
     height: 32px;
+    /* Define a altura */
     border: 1px solid #eadfe2;
+    /* Cria uma borda clara */
     border-radius: 7px;
+    /* Arredonda os cantos */
     display: flex;
+    /* Coloca icone e input lado a lado */
     align-items: center;
+    /* Centraliza verticalmente */
     margin-bottom: 8px;
+    /* Cria espaco entre os campos */
     padding: 0 9px;
+    /* Cria espaco horizontal interno */
     background: #fff;
+    /* Define o fundo branco */
     transition: 0.2s;
+    /* Suaviza alteracoes visuais */
 }
 
 .input-box:focus-within {
+    /* Aplica estilo quando o campo interno recebe foco */
     border-color: #ed6d91;
+    /* Muda a cor da borda */
     box-shadow: 0 0 0 2px rgba(237, 109, 145, 0.08);
+    /* Adiciona um destaque suave */
 }
 
 .icon {
+    /* Estiliza os icones dos campos */
     width: 20px;
+    /* Reserva espaco para o icone */
     color: #777;
+    /* Define a cor */
     font-size: 15px;
+    /* Define o tamanho */
     display: flex;
+    /* Permite centralizacao */
     align-items: center;
+    /* Centraliza verticalmente */
     justify-content: center;
+    /* Centraliza horizontalmente */
 }
 
 .input-box input {
+    /* Estiliza os campos de texto */
     width: 100%;
+    /* Ocupa o espaco restante */
     height: 100%;
+    /* Ocupa toda a altura da caixa */
     border: none;
+    /* Remove a borda padrao */
     outline: none;
+    /* Remove o contorno padrao */
     background: transparent;
+    /* Deixa o fundo transparente */
     padding-left: 7px;
+    /* Cria espaco entre icone e texto */
     font-size: 10px;
+    /* Define o tamanho do texto */
     color: #333;
+    /* Define a cor */
 }
 
 .input-box input::placeholder {
+    /* Estiliza o texto de exemplo dos campos */
     color: #8d8d8d;
+    /* Define a cor cinza */
 }
 
-/* =========================
-   MENSAGEM
-========================= */
-
+/* MENSAGEM */
 #mensagem {
+    /* Area usada para mostrar erros e sucesso */
     font-size: 10px;
+    /* Define o tamanho da mensagem */
     color: #df4169;
+    /* Define a cor inicial vermelha/rosa */
     min-height: 0;
+    /* Nao reserva altura desnecessaria */
     text-align: center;
+    /* Centraliza a mensagem */
 }
 
-/* =========================
-   BOTÃO
-========================= */
-
+/* BOTAO */
 .btn-cadastrar {
+    /* Estiliza o botao de cadastro */
     width: 100%;
+    /* Ocupa toda a largura */
     height: 31px;
+    /* Define a altura */
     border: none;
+    /* Remove a borda */
     border-radius: 7px;
+    /* Arredonda os cantos */
     background: #ec6288;
+    /* Define a cor rosa */
     color: white;
+    /* Define o texto branco */
     font-size: 11px;
+    /* Define o tamanho do texto */
     cursor: pointer;
+    /* Mostra a mao ao passar o mouse */
     transition: 0.2s;
+    /* Suaviza as alteracoes */
 }
 
 .btn-cadastrar:hover {
+    /* Estilo aplicado quando o mouse passa sobre o botao */
     background: #dc5078;
+    /* Escurece o botao */
 }
 
 .btn-cadastrar:active {
+    /* Estilo aplicado enquanto o botao esta sendo pressionado */
     transform: scale(0.98);
+    /* Diminui levemente o botao */
 }
 
-/* =========================
-   DIVISOR
-========================= */
-
+/* DIVISOR */
 .ou {
+    /* Organiza as linhas e o texto */
     display: flex;
+    /* Coloca os elementos lado a lado */
     align-items: center;
+    /* Centraliza verticalmente */
     gap: 8px;
+    /* Cria espaco entre os elementos */
     margin: 16px 0;
+    /* Cria espaco acima e abaixo */
 }
 
 .ou span {
+    /* Estiliza as linhas do divisor */
     flex: 1;
+    /* Faz as linhas ocuparem o espaco disponivel */
     height: 1px;
+    /* Define a espessura */
     background: #eee;
+    /* Define a cor */
 }
 
 .ou p {
+    /* Estiliza o texto do divisor */
     font-size: 9px;
+    /* Define o tamanho */
     color: #777;
+    /* Define a cor */
     white-space: nowrap;
+    /* Impede a quebra do texto */
 }
 
-/* =========================
-   REDES SOCIAIS
-========================= */
-
+/* REDES SOCIAIS */
 .social-login {
+    /* Organiza os botoes sociais */
     display: flex;
+    /* Coloca os botoes lado a lado */
     justify-content: center;
+    /* Centraliza os botoes */
     gap: 20px;
+    /* Cria espaco entre eles */
 }
 
 .social {
+    /* Estilo compartilhado pelos tres botoes */
     width: 42px;
+    /* Define a largura */
     height: 42px;
+    /* Define a altura */
     border-radius: 50%;
+    /* Transforma o botao em circulo */
     background: #fff;
+    /* Define o fundo branco */
     border: 1px solid #eee;
+    /* Adiciona uma borda clara */
     cursor: pointer;
+    /* Mostra o cursor de clique */
     display: flex;
+    /* Permite centralizar o conteudo */
     justify-content: center;
+    /* Centraliza horizontalmente */
     align-items: center;
+    /* Centraliza verticalmente */
     font-size: 19px;
+    /* Define o tamanho do simbolo */
     transition: 0.2s;
+    /* Suaviza as animacoes */
 }
 
 .social:hover {
+    /* Efeito ao passar o mouse */
     transform: translateY(-2px);
+    /* Move o botao levemente para cima */
     box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    /* Adiciona sombra */
 }
 
 .google {
+    /* Define a cor do simbolo do Google */
     color: #4285f4;
 }
 
 .facebook {
+    /* Define a cor do simbolo do Facebook */
     color: #4267B2;
     font-size: 22px;
+    /* Aumenta o tamanho do simbolo */
 }
 
 .apple {
+    /* Define a cor do simbolo da Apple */
     color: #111;
     font-size: 13px;
+    /* Ajusta o tamanho do simbolo */
 }
 
-/* =========================
-   LOGIN
-========================= */
-
+/* LOGIN */
 .login {
+    /* Estiliza a mensagem para usuarios que ja possuem conta */
     text-align: center;
+    /* Centraliza o texto */
     margin-top: 27px;
+    /* Cria espaco acima */
     font-size: 9px;
+    /* Define o tamanho */
     color: #777;
+    /* Define a cor */
 }
 
-.login a {
-    color: #c95f7e;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.login a:hover {
-    text-decoration: underline;
-}
-
-/* =========================
-   CELULAR
-========================= */
-
-@media (max-width: 430px) {
-
-    body {
-        align-items: stretch;
-    }
-
-    .container {
-        padding: 8px;
-    }
-
-    .cadastro-card {
-        min-height: calc(100vh - 16px);
-        padding: 25px 18px;
-    }
-}
